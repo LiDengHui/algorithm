@@ -2,15 +2,19 @@ import BinarySearchTree, {
     inOrder,
     preOrder,
     postOrder,
+    getHeight,
+    getWidth,
 } from "@/tree/binary-search";
 
 describe("BinarySearchTree", () => {
     const binarySearchTree = new BinarySearchTree();
-    const nums = [23, 45, 16, 37, 3, 99, 22];
+    const nums = [23, 45, 16, 37, 3, 99, 22, 10, 20, 30];
 
     for (let i = 0; i < nums.length; i++) {
         binarySearchTree.insert(nums[i]);
     }
+
+    binarySearchTree.show();
 
     it("getMin", () => {
         expect(binarySearchTree.getMin()).toBe(3);
@@ -22,8 +26,15 @@ describe("BinarySearchTree", () => {
     });
 
     it("find", () => {
-        const f = binarySearchTree.find(3);
-        expect(f.data).toBe(3);
+        const f = binarySearchTree.find(10);
+        expect(f.data).toBe(10);
+    });
+
+    it("remove 22", () => {
+        let f = binarySearchTree.find(22);
+        expect(f.data).toBe(22);
+        binarySearchTree.remove(22);
+        expect(f).toBeFalsy;
     });
 });
 

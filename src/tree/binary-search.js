@@ -1,3 +1,4 @@
+import { fibonacci3 } from "@/exercise/fibonacci.js";
 class Node {
     constructor(data, left, right) {
         this.data = data;
@@ -73,9 +74,47 @@ export default class BinarySearchTree {
     remove(data) {
         this.root = removeNode(this.root, data);
     }
+
+    show() {
+        preOrderShowNode(this.root);
+    }
 }
 
-function removeNode(node, data) {}
+function removeNode(node, data) {
+    if (node == null) {
+        return null;
+    }
+
+    if (data == node.data) {
+        if (node.left == null && node.left == null) {
+            return null;
+        }
+        if (node.left == null) {
+            return node.right;
+        }
+
+        if (node.right == null) {
+            return node.left;
+        }
+
+        tempNode = getSmallest(node.right);
+        node.data = tempNode.data;
+        node.right = removeNode(node.right, tempNode.data);
+    } else if (data > node.data) {
+        node.right = removeNode(node.right, data);
+    } else {
+        node.left = removeNode(node.left, data);
+    }
+
+    return node;
+}
+
+function getSmallest(node) {
+    while (temp.left) {
+        temp = temp.left;
+    }
+    return temp;
+}
 /**
  * 中序遍历
  * @param {*} node
@@ -111,4 +150,39 @@ export function postOrder(node, ary) {
         postOrder(node.right, ary);
         ary.push(node.data);
     }
+}
+
+export function getHeight(node, parentHeight = 0) {
+    if (node == null) {
+        return 0;
+    }
+    if (node.left == null && node.left == null) {
+        return 1;
+    } else if (node.left == null) {
+        return getHeight(node.rigth) + 1;
+    } else if (node.right == null) {
+        return getHeight(node.left) + 1;
+    } else {
+        return Math.max(getHeight(node.left), getHeight(node.right)) + 1;
+    }
+}
+
+export function preOrderShowNode(node, preWidth = 0) {
+    if (!(node == null)) {
+        const t = showNode(node, preWidth);
+        preOrderShowNode(node.left, 0);
+        preOrderShowNode(node.rigth, t);
+    }
+}
+
+export function showNode(node, preWidth) {
+    let w = 0;
+    if (node == null) {
+    } else {
+        const h = getHeight(node);
+        w = fibonacci3(h);
+        console.log(" ".repeat((w + preWidth) * 2), node.data);
+    }
+
+    return w;
 }
