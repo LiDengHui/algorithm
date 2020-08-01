@@ -22,7 +22,6 @@ export default class BinarySearchTree {
             let parent;
             while (true) {
                 parent = current;
-
                 if (data < current.data) {
                     current = current.left;
                     if (current == null) {
@@ -76,7 +75,22 @@ export default class BinarySearchTree {
     }
 
     show() {
-        preOrderShowNode(this.root);
+        const arr = preOrderShowNode(this.root);
+        const maxHeight = Math.max(...arr.map((e) => e.h));
+
+        const map = {};
+        arr.forEach((e) => {
+            map[e.deep] = map[e.deep] || [];
+            map[e.deep].push(e);
+        });
+        const t = Object.keys(map)
+            .sort((a, b) => a - b)
+            .forEach((e) => {
+                const str1 = map[e].reduce((str, m) => {
+                    return str + "♦️".repeat(m.w * 5) + m.node.data;
+                }, "");
+                // console.log(str1);
+            });
     }
 }
 
@@ -159,7 +173,7 @@ export function getHeight(node, parentHeight = 0) {
     if (node.left == null && node.left == null) {
         return 1;
     } else if (node.left == null) {
-        return getHeight(node.rigth) + 1;
+        return getHeight(node.right) + 1;
     } else if (node.right == null) {
         return getHeight(node.left) + 1;
     } else {
@@ -167,22 +181,29 @@ export function getHeight(node, parentHeight = 0) {
     }
 }
 
-export function preOrderShowNode(node, preWidth = 0) {
+export function preOrderShowNode(node, deep = 0, preWidth = 0, arr = []) {
     if (!(node == null)) {
-        const t = showNode(node, preWidth);
-        preOrderShowNode(node.left, 0);
-        preOrderShowNode(node.rigth, t);
+        const t = showNode(node, arr, preWidth, deep);
+        deep++;
+        preOrderShowNode(node.left, deep, preWidth, arr);
+        preOrderShowNode(node.right, deep, preWidth + t, arr);
     }
+
+    return arr;
 }
 
-export function showNode(node, preWidth) {
+export function showNode(node, arr, preWidth, deep) {
     let w = 0;
-    if (node == null) {
-    } else {
-        const h = getHeight(node);
+    let h = 0;
+    if (node !== null) {
+        h = getHeight(node);
         w = fibonacci3(h);
-        console.log(" ".repeat((w + preWidth) * 2), node.data);
+        arr.push({
+            h,
+            deep,
+            w: w + preWidth,
+            node,
+        });
     }
-
     return w;
 }
