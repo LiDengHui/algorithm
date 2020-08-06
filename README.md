@@ -1,4 +1,4 @@
-# algorithm
+# algorithm(算法)
 
 ## 基本结构
 
@@ -12,3 +12,17 @@
 2.  Queue (队列)
 3.  LinkedList (链表)
 4.  Tree (树)
+
+
+## Tree(树)(`./tree`)
+
+| 文件名          | 描述           | 查看方式          |
+| --------------- | -------------- | ----------------- |
+| `print-tree`    | 数组转树并打印 | `node print-tree` |
+| `binary-search` | 二叉树搜索树   | `npm run test`    |
+
+## Exercise(练习)(`./exercise`)
+
+| 文件名             | 描述             | 查看方式       |
+| ------------------ | ---------------- | -------------- |
+| `majority-element` | 寻找数组主要元素 | `npm run test` |
