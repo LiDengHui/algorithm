@@ -23,8 +23,10 @@
 
 ## Exercise(练习)(`./exercise`)
 
-| 文件名             | 描述                 | 查看方式       |
-| ------------------ | -------------------- | -------------- |
-| `majority-element` | 寻找数组主要元素     | `npm run test` |
-| `is-staright`      | 判断五张牌是不是顺子 |                |
-| `missing-number`   | 寻找丢失的数字       |                |
+| 文件名                        | 描述                 | 使用方法       |
+| ----------------------------- | -------------------- | -------------- |
+| `majority-element`            | 寻找数组主要元素     | `npm run test` |
+| `is-staright`                 | 判断五张牌是不是顺子 |                |
+| `missing-number`              | 寻找丢失的数字       |                |
+| `length-of-longest-substring` | 寻找最长子串         | 滑动窗口       |
+
