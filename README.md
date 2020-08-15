@@ -30,3 +30,4 @@
 | `missing-number`              | 寻找丢失的数字       |                   |
 | `length-of-longest-substring` | 寻找最长子串         | 滑动窗口          |
 | `moving-count`                | 机器人的运动范围     | 深度优先/广度优先 |
+| `min-number`                  | 数组组成最小的数     | 快速排序          |
