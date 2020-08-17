@@ -32,3 +32,4 @@
 | `moving-count`                | 机器人的运动范围     | 深度优先/广度优先 |
 | `min-number`                  | 数组组成最小的数     | 快速排序          |
 | `c-queue`                     | 用两个栈实现一个队列 | 栈和队列          |
+| `reverse-linked-list`         | 反转链表             |                   |
