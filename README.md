@@ -33,3 +33,11 @@
 | `min-number`                  | 数组组成最小的数     | 快速排序          |
 | `c-queue`                     | 用两个栈实现一个队列 | 栈和队列          |
 | `reverse-linked-list`         | 反转链表             |                   |
+| `get-kth-from-end`            | 链表中倒数第k个节点  | 快慢双指针        |
+
+## Utilcesg('./util)
+| 文件名                  | 描述               | 使用方法 |
+| ----------------------- | ------------------ | -------- |
+| `list-node`             | 单向链表节点       |          |
+| `make-linked-from-list` | 转换数组成单向链表 |          |
+| `make-list-from-linked` | 转换单向链表成数组 |          |
