@@ -23,7 +23,7 @@
  * @param {*} headB
  */
 
-export const getInterSessionNode = function (headA, headB) {
+export const getIntersectionNode = function (headA, headB) {
     let node = headA;
     let lengthA = 0;
 
