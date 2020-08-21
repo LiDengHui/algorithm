@@ -36,6 +36,7 @@
 | `get-kth-from-end`            | 链表中倒数第k个节点            | 快慢双指针        |
 | `two-sum-01`                  | 和为s的两个数字                | 夹逼指针          |
 | `exchange`                    | 调整数组顺序使奇数位于偶数前面 | 夹逼指针          |
+| `get-intersession-node`       | 找出链表公共节点               | 快慢指针          |
 
 ## Utilcesg('./util)
 | 文件名                  | 描述               | 使用方法 |
@@ -43,3 +44,4 @@
 | `list-node`             | 单向链表节点       |          |
 | `make-linked-from-list` | 转换数组成单向链表 |          |
 | `make-list-from-linked` | 转换单向链表成数组 |          |
+| `linked-concat`         | 链接两个链表       |          |
