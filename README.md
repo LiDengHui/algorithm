@@ -38,6 +38,7 @@
 | `exchange`                    | 调整数组顺序使奇数位于偶数前面 | 夹逼指针          |
 | `get-intersection-node`       | 找出链表公共节点               | 快慢指针          |
 | `copy-random-list`            | 复杂链表的复制                 |                   |
+| `merge-two-lists`             | 合并两个链表                   | 哨兵节点          |
 
 ## Utilcesg('./util)
 | 文件名                     | 描述                 | 使用方法 |
