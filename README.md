@@ -39,6 +39,7 @@
 | `get-intersection-node`       | 找出链表公共节点               | 快慢指针          |
 | `copy-random-list`            | 复杂链表的复制                 |                   |
 | `merge-two-lists`             | 合并两个链表                   | 哨兵节点          |
+| `find-continuous-sequence`    | 和为s的连续正数序列            | 双指针            |
 
 ## Utilcesg('./util)
 | 文件名                     | 描述                 | 使用方法 |
