@@ -41,12 +41,14 @@
 | `merge-two-lists`             | 合并两个链表                   | 哨兵节点          |
 | `find-continuous-sequence`    | 和为s的连续正数序列            | 双指针            |
 | `integer-break`               | 整数拆分最大乘积               | 动态、贪心        |
+| `entry-node-of-loop`          | 环路检测                       | 快慢双指针        |
 
 ## Utilcesg('./util)
-| 文件名                     | 描述                 | 使用方法 |
-| -------------------------- | -------------------- | -------- |
-| `list-node`                | 单向链表节点         |          |
-| `make-linked-from-list`    | 转换数组成单向链表   |          |
-| `make-list-from-linked`    | 转换单向链表成数组   |          |
-| `linked-concat`            | 链接两个链表         |          |
-| `mark-release-random-list` | 数组与复杂链表的转换 |          |
+| 文件名                       | 描述                 | 使用方法 |
+| ---------------------------- | -------------------- | -------- |
+| `list-node`                  | 单向链表节点         |          |
+| `make-linked-from-list`      | 转换数组成单向链表   |          |
+| `make-loop-linked-from-list` | 数组转成环路链表     |          |
+| `make-list-from-linked`      | 转换单向链表成数组   |          |
+| `linked-concat`              | 链接两个链表         |          |
+| `mark-release-random-list`   | 数组与复杂链表的转换 |          |
