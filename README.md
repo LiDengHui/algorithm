@@ -40,6 +40,7 @@
 | `copy-random-list`            | 复杂链表的复制                 |                   |
 | `merge-two-lists`             | 合并两个链表                   | 哨兵节点          |
 | `find-continuous-sequence`    | 和为s的连续正数序列            | 双指针            |
+| `integer-break`               | 整数拆分最大乘积               | 动态、贪心        |
 
 ## Utilcesg('./util)
 | 文件名                     | 描述                 | 使用方法 |
