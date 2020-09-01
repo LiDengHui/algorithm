@@ -42,8 +42,9 @@
 | `find-continuous-sequence`    | 和为s的连续正数序列            | 双指针            |
 | `integer-break`               | 整数拆分最大乘积               | 动态、贪心        |
 | `entry-node-of-loop`          | 环路检测                       | 快慢双指针        |
+| `is-palindrome`               | 判断数字回文                   |                   |
 
-## Utilcesg('./util)
+## Util('./util)
 | 文件名                       | 描述                 | 使用方法 |
 | ---------------------------- | -------------------- | -------- |
 | `list-node`                  | 单向链表节点         |          |
