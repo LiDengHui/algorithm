@@ -5,7 +5,8 @@
     "repository": "git@github.com:LiDengHui/algorithm.git",
     "author": "lidenghui <denghui.li@thoughtworks.com>",
     "scripts": {
-        "test": "jest --watch"
+        "dev": "jest --watch",
+        "test": "jest"
     },
     "license": "MIT",
     "devDependencies": {
