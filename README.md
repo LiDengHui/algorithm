@@ -46,6 +46,7 @@
 | `height-checker`              | 检查高度                       | 排序              |
 | `is-isomorphic`               | 同构字符串                     | 映射              |
 | `intersection`                | 数组交集                       |                   |
+| `get-hint`                    | 猜数字(Bulls and Cows)         |                   |
 ## Util('./util)
 | 文件名                       | 描述                 | 使用方法 |
 | ---------------------------- | -------------------- | -------- |
