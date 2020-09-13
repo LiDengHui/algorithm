@@ -48,6 +48,8 @@
 | `intersection`                | 数组交集                       |                   |
 | `get-hint`                    | 猜数字(Bulls and Cows)         |                   |
 | `swap-pairs`                  | 交换链表相邻节点               |                   |
+| `remove-duplicates`           | 排序数组去重                   |                   |
+
 ## Util('./util)
 | 文件名                       | 描述                 | 使用方法 |
 | ---------------------------- | -------------------- | -------- |
