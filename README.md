@@ -50,6 +50,7 @@
 | `swap-pairs`                  | 交换链表相邻节点               |                   |
 | `remove-duplicates`           | 排序数组去重                   |                   |
 | `plus-one`                    | 数组数字加一                   | BigInt            |
+| `climb-stairs`                | 爬楼梯                         | 斐波拉契数列      |
 
 ## Util('./util)
 | 文件名                       | 描述                 | 使用方法 |
