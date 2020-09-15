@@ -51,6 +51,7 @@
 | `remove-duplicates`           | 排序数组去重                   |                   |
 | `plus-one`                    | 数组数字加一                   | BigInt            |
 | `climb-stairs`                | 爬楼梯                         | 斐波拉契数列      |
+| `delete-node`                 | 删除中间节点                   | 链表              |
 
 ## Util('./util)
 | 文件名                       | 描述                 | 使用方法 |
