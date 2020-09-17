@@ -19,10 +19,6 @@
 
 1 <= values <= 10000
 最多会对 appendTail、deleteHead 进行 10000 次调用
-
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
 /**

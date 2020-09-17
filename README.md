@@ -53,6 +53,7 @@
 | `climb-stairs`                | 爬楼梯                         | 斐波拉契数列      |
 | `delete-node`                 | 删除中间节点                   | 链表              |
 | `can-win-nim`                 | Nim游戏                        | 数学观察法        |
+| ` merge`                      | 合并两个有序数组               | 归并排序          |
 
 ## Util('./util)
 | 文件名                       | 描述                 | 使用方法 |
