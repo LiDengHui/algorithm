@@ -1,6 +1,6 @@
 {
     "name": "algorithm",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "index.js",
     "repository": "git@github.com:LiDengHui/algorithm.git",
     "author": "lidenghui <denghui.li@thoughtworks.com>",
