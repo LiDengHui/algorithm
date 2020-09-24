@@ -25,7 +25,7 @@
  * 参考答案:
  *
  *
- * 如果一个数组的长度为n, 向右旋转 k 次, 其实就跟没有旋转一样, 所以实际上要旋转的次数step = n%k.
+ * 如果一个数组的长度为length, 向右旋转 k 次, 其实就跟没有旋转一样, 所以实际上要旋转的次数step = k % length.
  *
  * 方法一:
  *
@@ -42,6 +42,8 @@
 export function rotate(nums, k) {
     const temp = [];
     const length = nums.length;
+
+    k = k % length;
 
     for (let i = length - 1; i >= length - k; i--) {
         temp.push(nums.pop());
