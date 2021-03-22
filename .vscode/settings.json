@@ -2,5 +2,8 @@
     "files.autoSave": "afterDelay",
     "prettier.enableDebugLogs": true,
     "prettier.requireConfig": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "rabbbit"
+    ]
 }
