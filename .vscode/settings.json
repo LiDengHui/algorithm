@@ -4,6 +4,7 @@
     "prettier.requireConfig": true,
     "editor.formatOnSave": true,
     "cSpell.words": [
+        "babgbag",
         "rabbbit"
     ]
 }
