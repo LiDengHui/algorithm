@@ -25,4 +25,20 @@ describe("rotate-right", () => {
         const list = makeListFromLinked(result);
         expect(list).toStrictEqual([2, 0, 1]);
     });
+
+    it("should support head is single node", () => {
+        const arr = [0];
+        const head = makeLinkedFromList(arr);
+        const result = rotateRight(head, 4);
+        const list = makeListFromLinked(result);
+        expect(list).toStrictEqual([0]);
+    });
+
+    it("should support head is null", () => {
+        const arr = [];
+        const head = makeLinkedFromList(arr);
+        const result = rotateRight(head, 4);
+        const list = makeListFromLinked(result);
+        expect(list).toStrictEqual([]);
+    });
 });

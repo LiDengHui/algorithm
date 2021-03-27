@@ -42,7 +42,7 @@
  * @returns
  */
 export function rotateRight(head, k) {
-    if (k === 0) return head;
+    if (k === 0 || !head) return head;
 
     let cur = head;
     let n = 1;
