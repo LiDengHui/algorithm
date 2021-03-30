@@ -20,7 +20,7 @@
 
 
 解题思路：
-用二分法思想，找中心点，将martix划分为四个区域，判断
+用二分法思想，找中心点，将matrix划分为四个区域，判断
 [
 A [1,   4,  7,| 11, 15], B
   [2,   5,  8,| 12, 19],
@@ -41,7 +41,7 @@ C  [18, 21, 23,| 26, 30] D
 1.  找到矩阵中心点center = {x, y}，将矩阵划分为四个区域，A,B,C,D;
     center = {
         x: Math.floor((start.x+end.x)/2),
-        y: Math.floor((srart.y+end.y)/2),
+        y: Math.floor((start.y+end.y)/2),
     }
 
 2. 判断目标值（target）与中心值（mid）是否相等， 相等则返回true

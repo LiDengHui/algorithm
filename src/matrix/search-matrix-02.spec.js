@@ -1,5 +1,5 @@
-import searchMatrix from "@/exercise/search-matrix";
-describe("exercise searchMatrix", () => {
+import searchMatrix from "./search-matrix-02";
+describe("exercise searchMatrix 02", () => {
     let arr = [
         [1, 4, 7, 11, 15],
         [2, 5, 8, 12, 19],
